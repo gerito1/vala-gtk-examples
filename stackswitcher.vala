@@ -1,15 +1,12 @@
 /*
- * The Stack widget is similar to a Notebook in providing a container where the
- * visible object can be changed. On its own however, a Stack does not provide
- * a way for the user to change what is visible.
+ * The StackSwitcher can be added to the Stack to provide a way to change the
+ * visible child using buttons.
 */
 
 using Gtk;
 
 public class Example : Window
 {
-    private Stack stack;
-
     public Example()
     {
         this.title = "Stack";
@@ -21,7 +18,7 @@ public class Example : Window
         var stackswitcher = new StackSwitcher();
         grid.attach(stackswitcher, 0, 0, 1, 1);
 
-        stack = new Stack();
+        var stack = new Stack();
         stack.set_vexpand(true);
         stack.set_hexpand(true);
         stackswitcher.set_stack(stack);
