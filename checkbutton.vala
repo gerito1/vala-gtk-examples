@@ -1,3 +1,9 @@
+/*
+ * Similar to the RadioButton, the CheckButton combines a label and box to
+ * indicate the current state. When the CheckButton is toggled, a tick is either
+ * shown or hidden.
+*/
+
 using Gtk;
 
 public class Example : Window

@@ -1,3 +1,8 @@
+/*
+ * ToggleButton widgets is used to indicate whether something is active or not,
+ * with the appearance of a standard Button widget.
+*/
+
 using Gtk;
 
 public class Example : Window

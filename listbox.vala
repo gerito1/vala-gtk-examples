@@ -1,8 +1,8 @@
 /*
  * The ListBox widget provides a vertical container holding ListBoxRow children.
- * The children are created automatically when another widget is added such as
- * a Label or Button. The container also provides sorting and filtering,
- * allowing more complex layouts than can be achieved via a CellRenderer.
+ * The children are created automatically when another widget is added.. The
+ * container also provides sorting and filtering, allowing more complex layouts
+ * than can be achieved via a CellRenderer.
 */
 
 using Gtk;

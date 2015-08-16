@@ -1,3 +1,8 @@
+/*
+ * The Button widget is commonly found in programs and used to launch processes
+ * and operations.
+*/
+
 using Gtk;
 
 public class Example : Window

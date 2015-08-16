@@ -1,3 +1,8 @@
+/*
+ * A Notebook can be used to provide tabulated pages on which different content
+ * can be added.
+*/
+
 using Gtk;
 
 public class Example : Window

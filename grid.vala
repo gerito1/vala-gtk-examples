@@ -1,3 +1,8 @@
+/*
+ * The Grid allows widgets to be placed horizontally and vertically across one
+ * or more cells with options provided for spacing and sizing.
+*/
+
 using Gtk;
 
 public class Example : Window

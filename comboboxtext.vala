@@ -1,3 +1,8 @@
+/*
+ * The ComboBoxText provides a simple dropdown menu to select values from a
+ * list. Text is also permitted to be entered if the option is set.
+*/
+
 using Gtk;
 
 public class Example : Window

@@ -1,3 +1,9 @@
+/*
+ * The Label is commonly used for basic purposes such as displaying short
+ * amounts of text. It does however provide a number of extra features allowing
+ * the display of complex text layouts.
+*/
+
 using Gtk;
 
 public class Example : Window

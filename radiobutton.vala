@@ -1,3 +1,9 @@
+/*
+ * A RadioButton is often combined with others to indicate the status from a
+ * number of items. Each provides a label and display to indicate which of the
+ * group is selected.
+*/
+
 using Gtk;
 
 public class Example : Window

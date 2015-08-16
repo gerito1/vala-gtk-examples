@@ -1,3 +1,8 @@
+/*
+ * The Scale widget provides a way for adjusting values between a set range,
+ * with the user sliding a knob to the preferred value.
+*/
+
 using Gtk;
 
 public class Example : Window

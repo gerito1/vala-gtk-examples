@@ -1,3 +1,8 @@
+/*
+ * An Entry is used to receive and display short lines of text, with functions
+ * to handle the data.
+*/
+
 using Gtk;
 
 public class EntryExample : Window

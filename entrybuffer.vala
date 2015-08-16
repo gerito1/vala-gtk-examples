@@ -1,3 +1,8 @@
+/*
+ * The EntryBuffer object provides a way to store text held in an Entry, with
+ * functionality for handling the text and sharing to other Entry widgets.
+*/
+
 using Gtk;
 
 public class EntryExample : Window

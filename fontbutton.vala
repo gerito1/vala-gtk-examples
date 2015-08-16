@@ -1,3 +1,8 @@
+/*
+ * The FontButton provides the user with a button and dialog from which to
+ * choose a font type, size, and styling options.
+*/
+
 using Gtk;
 
 public class Example : Window

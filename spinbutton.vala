@@ -1,3 +1,9 @@
+/*
+ * A SpinButton provides a way to enter numbers either by textual entry from the
+ * user, or by changing the value with up/down buttons. Ranges to limit the
+ * value entered are able to be set.
+*/
+
 using Gtk;
 
 public class Example : Window

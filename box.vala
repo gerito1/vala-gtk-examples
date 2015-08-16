@@ -1,3 +1,8 @@
+/*
+ * The Box container allows child widgets to be added in a horizontal or
+ * vertical orientation, with customisations for the sizing on the added widget.
+*/
+
 using Gtk;
 
 public class Example : Window

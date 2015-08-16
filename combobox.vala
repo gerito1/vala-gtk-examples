@@ -1,3 +1,9 @@
+/*
+ * Similar to a ComboBoxText, the ComboBox allows selection of items from a
+ * dropdown list. It provides more features, and is capable of displaying
+ * options of different types other than text.
+*/
+
 using Gtk;
 
 public class Example : Window

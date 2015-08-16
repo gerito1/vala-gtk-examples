@@ -1,3 +1,8 @@
+/*
+ * Coupled with an Entry, the EntryCompletion object provides matching of text
+ * to a list of entries, allowing the user to select a value.
+*/
+
 using Gtk;
 
 public class EntryExample : Window

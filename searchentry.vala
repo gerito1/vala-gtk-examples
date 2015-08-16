@@ -1,3 +1,8 @@
+/*
+ * A SearchEntry has an appearance similar to a standard Entry, but is tailored
+ * for use when being used to provide search functionality.
+*/
+
 using Gtk;
 
 public class Example : Window
