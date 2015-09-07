@@ -23,7 +23,7 @@ public class Example : Window
         stack.set_vexpand(true);
         stack.set_hexpand(true);
         stacksidebar.set_stack(stack);
-        grid.attach(stack, 0, 1, 1, 1);
+        grid.attach(stack, 1, 0, 1, 1);
 
         var label1 = new Label("Page 1 of Stack");
         stack.add_titled(label1, "Page1", "Page 1");
