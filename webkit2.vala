@@ -35,10 +35,10 @@ public class MyWebkitWindow : Gtk.Window {
      * See https://chebizarro.gitbooks.io/the-vala-tutorial/content/gobject-style-construction.html
      */
     construct {
-        this.title = MyWebkitWindow.BROWSER_TITLE;
+        title = MyWebkitWindow.BROWSER_TITLE;
         set_default_size (800, 600);
         try {
-            this.protocol_regex = new Regex (".*://.*");
+            protocol_regex = new Regex (".*://.*");
         } catch (RegexError e) {
             critical ("%s", e.message);
         }
@@ -52,20 +52,20 @@ public class MyWebkitWindow : Gtk.Window {
         reload_button = new Gtk.ToolButton (reload_image, null);
         var stop_image = new Gtk.Image.from_icon_name ("process-stop", Gtk.IconSize.SMALL_TOOLBAR);
         stop_button = new Gtk.ToolButton (stop_image, null);
-        toolbar.add (this.back_button);
-        toolbar.add (this.forward_button);
-        toolbar.add (this.reload_button);
-        toolbar.add (this.stop_button);
+        toolbar.add (back_button);
+        toolbar.add (forward_button);
+        toolbar.add (reload_button);
+        toolbar.add (stop_button);
 
-        this.url_bar = new Gtk.Entry ();
-        this.web_view = new WebKit.WebView ();
+        url_bar = new Gtk.Entry ();
+        web_view = new WebKit.WebView ();
         var scrolled_window = new Gtk.ScrolledWindow (null, null); //The WebView doesn't contain scroll bars by its own.
         scrolled_window.set_policy (Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC);
-        scrolled_window.add (this.web_view);
+        scrolled_window.add (web_view);
         scrolled_window.hexpand = true;
         scrolled_window.vexpand = true;
-        this.status_bar = new Gtk.Label ("Welcome to %s".printf(BROWSER_TITLE));
-        this.status_bar.xalign = 0;
+        status_bar = new Gtk.Label ("Welcome to %s".printf(BROWSER_TITLE));
+        status_bar.xalign = 0;
 
         var grid = new Gtk.Grid ();
         grid.attach (toolbar, 0, 0, 1, 1);
@@ -106,10 +106,10 @@ public class MyWebkitWindow : Gtk.Window {
 
     void open_url (string page_url) {
         var url = page_url;
-        if (!this.protocol_regex.match (page_url)) {
+        if (!protocol_regex.match (page_url)) {
             url = "%s://%s".printf (MyWebkitWindow.DEFAULT_PROTOCOL, page_url);
         }
-        this.web_view.load_uri (url);
+        web_view.load_uri (url);
     }
 
     public static int main (string[] args) {
