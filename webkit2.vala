@@ -87,7 +87,11 @@ public class MyWebkitWindow : Gtk.Window {
 
         web_view.load_changed.connect ((load_event) => {
             url_bar.text = web_view.get_uri ();
-            title = "%s - %s".printf (web_view.title, MyWebkitWindow.BROWSER_TITLE);
+            if (web_view.title == null) {
+                title = MyWebkitWindow.BROWSER_TITLE;
+            } else {
+                title = "%s - %s".printf (web_view.title, MyWebkitWindow.BROWSER_TITLE);
+            }
 
             back_button.sensitive = web_view.can_go_back ();
             forward_button.sensitive = web_view.can_go_forward ();
