@@ -8,7 +8,7 @@ using Gtk;
 
 public class Example : Window
 {
-    private ListStore liststore;
+    private Gtk.ListStore liststore;
     private ComboBox combobox;
     private CellRendererText cellrenderertext;
 
@@ -17,7 +17,7 @@ public class Example : Window
         this.title = "ComboBox";
         this.destroy.connect(Gtk.main_quit);
 
-        liststore = new ListStore(1, typeof (string));
+        liststore = new Gtk.ListStore(1, typeof (string));
         Gtk.TreeIter iter;
 
         liststore.append(out iter);

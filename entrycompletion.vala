@@ -7,7 +7,7 @@ using Gtk;
 
 public class EntryExample : Window
 {
-    private ListStore liststore;
+    private Gtk.ListStore liststore;
     private Entry entry;
     private EntryCompletion entrycompletion;
 
@@ -19,7 +19,7 @@ public class EntryExample : Window
         entry = new Entry();
         this.add(entry);
 
-        liststore = new ListStore(1, typeof(string));
+        liststore = new Gtk.ListStore(1, typeof(string));
 
         Gtk.TreeIter iter;
         liststore.append(out iter);
