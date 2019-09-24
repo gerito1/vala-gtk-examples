@@ -96,6 +96,8 @@ A tutorial to further explain the use of each widget may be written in the futur
 
 [Geronimo Bareiro](https://github.com/gerito1)
 
+[Douglas Chidester](https://github.com/objectDisorientedProgrammer)
+
 ## To contribute
 
 Just submit a pull request, or open an issue.
