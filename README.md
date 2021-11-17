@@ -50,6 +50,17 @@ package can be included in the compiler with directive `--pkg` in the form
 valac webkit2.vala --pkg gtk+-3.0 --pkg webkit2gtk-4.0
 ```
 
+## Use a buildsystem to build all
+
+meson is provided to build all examples:
+
+```
+meson build
+ninja -C build
+./build/box
+./build/sourceview
+```
+
 ## Aditional Resources
 [The Vala Online Documentation](https://valadoc.org)
 
