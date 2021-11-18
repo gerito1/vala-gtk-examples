@@ -50,6 +50,17 @@ package can be included in the compiler with directive `--pkg` in the form
 valac webkit2.vala --pkg gtk+-3.0 --pkg webkit2gtk-4.0
 ```
 
+## Use a buildsystem to build all
+
+meson is provided to build all examples:
+
+```
+meson build
+ninja -C build
+./build/box
+./build/sourceview
+```
+
 ## Aditional Resources
 [The Vala Online Documentation](https://valadoc.org)
 
@@ -97,6 +108,8 @@ A tutorial to further explain the use of each widget may be written in the futur
 [Geronimo Bareiro](https://github.com/gerito1)
 
 [Douglas Chidester](https://github.com/objectDisorientedProgrammer)
+
+[Alberto Fanjul](https://github.com/albfan)
 
 ## To contribute
 
