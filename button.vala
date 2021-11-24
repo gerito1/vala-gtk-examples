@@ -1,6 +1,11 @@
 /*
  * The Button widget is commonly found in programs and used to launch processes
  * and operations.
+ *
+ * Compile using:
+ * valac button.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

@@ -1,6 +1,11 @@
 /*
  * ToggleButton widgets is used to indicate whether something is active or not,
  * with the appearance of a standard Button widget.
+ *
+ * Compile using:
+ * valac togglebutton.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

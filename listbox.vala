@@ -3,6 +3,11 @@
  * The children are created automatically when another widget is added.. The
  * container also provides sorting and filtering, allowing more complex layouts
  * than can be achieved via a CellRenderer.
+ *
+ * Compile using:
+ * valac listbox.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

@@ -1,6 +1,11 @@
 /*
  * The Separator is a sparsely used widget to visually separate content being
  * displayed. They can be horizontally or vertically oriented.
+ *
+ * Compile using:
+ * valac separator.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

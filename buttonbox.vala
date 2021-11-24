@@ -1,6 +1,11 @@
 /*
  * A ButtonBox is a container often used to house many buttons in vertical or
  * horizontal orientations. It aids in keeping the child widgets a similar size.
+ *
+ * Compile using:
+ * valac buttonbox.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

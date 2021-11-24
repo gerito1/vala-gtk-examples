@@ -1,6 +1,11 @@
 /*
  * The EntryBuffer object provides a way to store text held in an Entry, with
  * functionality for handling the text and sharing to other Entry widgets.
+ *
+ * Compile using:
+ * valac entrybuffer.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

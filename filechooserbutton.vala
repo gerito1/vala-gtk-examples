@@ -1,6 +1,11 @@
 /*
  * The FileChooserButton provides a Button-like widget used for the selection
  * of files and/or folders from the file system.
+ *
+ * Compile using:
+ * valac filechooserbutton.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

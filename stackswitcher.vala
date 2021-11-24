@@ -1,6 +1,11 @@
 /*
  * The StackSwitcher can be added to the Stack to provide a way to change the
  * visible child using buttons.
+ *
+ * Compile using:
+ * valac stackswitcher.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

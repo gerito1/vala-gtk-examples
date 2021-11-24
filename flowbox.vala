@@ -2,6 +2,11 @@
  * The FlowBox positions child widgets either horizontally or vertically
  * depending on how much size the container is allocated. Widgets are moved
  * dynamically as the container changes size and shape.
+ *
+ * Compile using:
+ * valac flowbox.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

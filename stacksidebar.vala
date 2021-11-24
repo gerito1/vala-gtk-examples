@@ -2,6 +2,11 @@
  * The StackSidebar works in a similar way to the StackSwitcher, however it
  * offers the choice of visible child in the Stack via a sidebar, with each item
  * listed vertically.
+ *
+ * Compile using:
+ * valac stacksidebar.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

@@ -5,18 +5,65 @@ Each example tries to showcase some use of the widget in an easy-to-understand f
 
 ## Usage
 
-Before running the examples, you will need compile the sources files and for that
-you need the Vala compiler.
+The examples are distributed as source code, if you want to run the examples you
+need to build them.
 
-First install the vala compiler
+You can build them using a build system, or manually.
 
-### Install vala compiler in debian and debian based systems
+## Using a buildsystem
+
+With meson and ninja you can automatically build all the examples.
+
+In the directory of the repo run
+
+```
+meson build
+ninja -C build
+```
+
+If built succesfully, every executable should be inside of the `./build`
+directory
+
+```
+./build/box
+./build/sourceview
+```
+
+You can modify each example and play around for testing purposes.
+Just run ninja again in the repo directory, and ninja will rebuild only
+the examples that were modified.
+
+```
+ninja -C build
+```
+
+
+Make sure you have installed the vala compiler, meson and ninja.
+
+
+In Debian/Ubuntu or derivatives
+```
+sudo apt-get install valac meson ninja
+```
+
+In Arch, or Arch based systems
+```
+sudo pacman -S vala meson ninja
+```
+
+
+## Manually build each example
+
+
+### Install the vala compiler
+
+In Debian/Ubuntu or derivatives
 
 ```
 sudo apt-get install valac
 ```
 
-### Install vala compiler in Arch Linux based systems
+In Arch, or Arch based systems
 
 ```
 sudo pacman -S vala
@@ -30,19 +77,20 @@ vala --version
 
 ### Compile the example
 
-Every example is a standalone file `filename.vala` to compile it use
+Every example is a standalone file `filename.vala`, you can compile a file like this
 
 ```
 valac filename.vala --pkg gtk+-3.0
 ```
 
-This will generate an executable `filename` in the directory of the repo to run it use
+This will generate an executable `filename` in the directory of the repo
+You can then run the example
 
 ```
 ./filename
 ```
 
-Keep in mind that some examples could use other packages besides gtk. Every additional
+Keep in mind that some examples could need other packages besides gtk. Every additional
 package can be included in the compiler with directive `--pkg` in the form
 `--pkg package-name` for example:
 
@@ -50,16 +98,8 @@ package can be included in the compiler with directive `--pkg` in the form
 valac webkit2.vala --pkg gtk+-3.0 --pkg webkit2gtk-4.0
 ```
 
-## Use a buildsystem to build all
-
-meson is provided to build all examples:
-
-```
-meson build
-ninja -C build
-./build/box
-./build/sourceview
-```
+Also it is posible that you will need to install said package in your system.
+Check your system documentation.
 
 ## Aditional Resources
 [The Vala Online Documentation](https://valadoc.org)

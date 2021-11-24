@@ -1,6 +1,11 @@
 /*
  * The Grid allows widgets to be placed horizontally and vertically across one
  * or more cells with options provided for spacing and sizing.
+ *
+ * Compile using:
+ * valac grid.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

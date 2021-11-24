@@ -114,10 +114,18 @@ executable('separator',
            dependencies : [gtk_dep],
            install : true)
 
-executable('sourceview',
+
+gtksourceview_dep = dependency('gtksourceview-4', required : false)
+if gtksourceview_dep.found()
+    executable('sourceview',
            'sourceview.vala',
-           dependencies : [gtk_dep, dependency('gtksourceview-4')],
+           dependencies : [gtk_dep, gtksourceview_dep],
            install : true)
+else
+    warning ('[-] Skipping sourceview.vala')
+    warning ('\tIt requires gtksourceview-4, but is not available.' )
+    warning ('\tCheck your system documentation to install it.')
+endif
 
 executable('spinbutton',
            'spinbutton.vala',
@@ -154,8 +162,15 @@ executable('togglebutton',
            dependencies : [gtk_dep],
            install : true)
 
-executable('webkit2',
+webkit2gtk_dep = dependency('webkit2gtk-4.0', required : false)
+if webkit2gtk_dep.found()
+    executable('webkit2',
            'webkit2.vala',
-           dependencies : [gtk_dep, dependency('webkit2gtk-4.0')],
-           install : true)
+           dependencies : [gtk_dep, webkit2gtk_dep],
+          install : true)
+ else
+    warning ('[-] Skipping webkit2.vala')
+    warning ('\tIt requires webkit2gtk-4.0, but is not available.')
+    warning ('\tCheck your system documentation to install it.')
+endif
 

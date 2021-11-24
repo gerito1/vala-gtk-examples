@@ -2,6 +2,11 @@
  * A RadioButton is often combined with others to indicate the status from a
  * number of items. Each provides a label and display to indicate which of the
  * group is selected.
+ *
+ * Compile using:
+ * valac radiobutton.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

@@ -1,6 +1,11 @@
 /*
  * The FontButton provides the user with a button and dialog from which to
  * choose a font type, size, and styling options.
+ *
+ * Compile using:
+ * valac fontbutton.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

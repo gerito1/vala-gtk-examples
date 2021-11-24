@@ -2,6 +2,11 @@
  * Similar to a ComboBoxText, the ComboBox allows selection of items from a
  * dropdown list. It provides more features, and is capable of displaying
  * options of different types other than text.
+ *
+ * Compile using:
+ * valac combobox.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

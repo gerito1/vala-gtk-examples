@@ -2,6 +2,11 @@
  * Similar to the RadioButton, the CheckButton combines a label and box to
  * indicate the current state. When the CheckButton is toggled, a tick is either
  * shown or hidden.
+ *
+ * Compile using:
+ * valac checkbutton.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

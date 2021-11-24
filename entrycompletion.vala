@@ -1,6 +1,11 @@
 /*
  * Coupled with an Entry, the EntryCompletion object provides matching of text
  * to a list of entries, allowing the user to select a value.
+ *
+ * Compile using:
+ * valac entrycompletion.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

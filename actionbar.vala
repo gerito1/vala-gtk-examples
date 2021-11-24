@@ -1,6 +1,11 @@
 /*
  * The ActionBar container is often placed below the content of the window, and
  * is used to show contextual actions.
+ *
+ * Compile using:
+ * valac actionbar.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

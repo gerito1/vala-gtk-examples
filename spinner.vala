@@ -1,6 +1,11 @@
 /*
  * The Spinner widget provides an animated indicator of activity in the program,
  * and is useful to indicate a long-running task.
+ *
+ * Compile using:
+ * valac spinner.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

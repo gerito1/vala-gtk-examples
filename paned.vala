@@ -2,6 +2,11 @@
  * The Paned widget provides two panels oriented vertically or horizontally.
  * Widgets can be added to the Paned container, with the separator between the
  * two panes being adjustable.
+ *
+ * Compile using:
+ * valac paned.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

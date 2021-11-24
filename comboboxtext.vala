@@ -1,6 +1,11 @@
 /*
  * The ComboBoxText provides a simple dropdown menu to select values from a
  * list. Text is also permitted to be entered if the option is set.
+ *
+ * Compile using:
+ * valac comboboxtext.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

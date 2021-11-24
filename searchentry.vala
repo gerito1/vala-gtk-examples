@@ -1,6 +1,11 @@
 /*
  * A SearchEntry has an appearance similar to a standard Entry, but is tailored
  * for use when being used to provide search functionality.
+ *
+ * Compile using:
+ * valac searchentry.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

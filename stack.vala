@@ -2,6 +2,11 @@
  * The Stack widget is similar to a Notebook in providing a container where the
  * visible object can be changed. On its own however, a Stack does not provide
  * a way for the user to change what is visible.
+ *
+ * Compile using:
+ * valac stack.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

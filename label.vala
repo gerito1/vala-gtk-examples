@@ -2,6 +2,11 @@
  * The Label is commonly used for basic purposes such as displaying short
  * amounts of text. It does however provide a number of extra features allowing
  * the display of complex text layouts.
+ *
+ * Compile using:
+ * valac label.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

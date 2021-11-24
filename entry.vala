@@ -1,6 +1,11 @@
 /*
  * An Entry is used to receive and display short lines of text, with functions
  * to handle the data.
+ *
+ * Compile using:
+ * valac entry.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

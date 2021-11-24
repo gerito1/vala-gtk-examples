@@ -1,6 +1,11 @@
 /*
  * The Box container allows child widgets to be added in a horizontal or
  * vertical orientation, with customisations for the sizing on the added widget.
+ *
+ * Compile using:
+ * valac box.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;

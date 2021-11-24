@@ -1,6 +1,11 @@
 /*
  * A Notebook can be used to provide tabulated pages on which different content
  * can be added.
+ *
+ * Compile using:
+ * valac notebook.vala --pkg gtk+-3.0
+ *
+ * Author: Andrew Steele
 */
 
 using Gtk;
