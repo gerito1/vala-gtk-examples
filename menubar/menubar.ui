@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="menubar">
+    <submenu>
+      <attribute name="label">File</attribute>
+      <section>
+        <item>
+          <attribute name="label">New</attribute>
+          <attribute name="action">app.new</attribute>
+        </item>
+        <item>
+          <attribute name="label">Quit</attribute>
+          <attribute name="action">app.quit</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label">Edit</attribute>
+      <section>
+        <item>
+          <attribute name="label">Copy</attribute>
+          <attribute name="action">win.copy</attribute>
+        </item>
+        <item>
+          <attribute name="label">Paste</attribute>
+          <attribute name="action">win.paste</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label">Choices</attribute>
+      <submenu>
+        <attribute name="label">Shapes</attribute>
+          <section>
+            <item>
+              <attribute name="label">Line</attribute>
+              <attribute name="action">win.shape</attribute>
+              <attribute name="target">line</attribute>
+            </item>
+            <item>
+              <attribute name="label">Triangle</attribute>
+              <attribute name="action">win.shape</attribute>
+              <attribute name="target">triangle</attribute>
+            </item>
+            <item>
+              <attribute name="label">Square</attribute>
+              <attribute name="action">win.shape</attribute>
+              <attribute name="target">square</attribute>
+            </item>
+            <item>
+              <attribute name="label">Polygon</attribute>
+              <attribute name="action">win.shape</attribute>
+              <attribute name="target">polygon</attribute>
+            </item>
+            <item>
+              <attribute name="label">Circle</attribute>
+              <attribute name="action">win.shape</attribute>
+              <attribute name="target">circle</attribute>
+            </item>
+          </section>
+      </submenu>
+      <section>
+        <item>
+          <attribute name="label">On</attribute>
+          <attribute name="action">app.state</attribute>
+          <attribute name="target">on</attribute>
+        </item>
+        <item>
+          <attribute name="label">Off</attribute>
+          <attribute name="action">app.state</attribute>
+          <attribute name="target">off</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label">Awesome</attribute>
+          <attribute name="action">app.awesome</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label">Help</attribute>
+      <section>
+        <item>
+          <attribute name="label">About</attribute>
+          <attribute name="action">win.about</attribute>
+        </item>
+      </section>
+    </submenu>
+  </menu>
+  <menu id="appmenu">
+    <section>
+      <item>
+        <attribute name="label">New</attribute>
+        <attribute name="action">app.new</attribute>
+      </item>
+      <item>
+        <attribute name="label">Quit</attribute>
+        <attribute name="action">app.quit</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

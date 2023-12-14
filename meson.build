@@ -162,6 +162,21 @@ executable('togglebutton',
            dependencies : [gtk_dep],
            install : true)
 
+gnome = import('gnome')
+
+menu_resources = gnome.compile_resources(
+    'menu-resources', 'menubar/gresources.xml',
+    source_dir: 'menubar',
+)
+
+executable('menubar',
+           [
+             'menubar.vala',
+             menu_resources
+           ],
+           dependencies : [gtk_dep],
+           install : true)
+
 webkit2gtk_dep = dependency('webkit2gtk-4.0', required : false)
 if webkit2gtk_dep.found()
     executable('webkit2',
