@@ -162,6 +162,11 @@ executable('togglebutton',
            dependencies : [gtk_dep],
            install : true)
 
+executable('treeview',
+           'treeview.vala',
+           dependencies : [gtk_dep],
+           install : true)
+
 webkit2gtk_dep = dependency('webkit2gtk-4.0', required : false)
 if webkit2gtk_dep.found()
     executable('webkit2',
