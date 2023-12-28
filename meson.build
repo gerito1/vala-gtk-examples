@@ -162,6 +162,7 @@ executable('togglebutton',
            dependencies : [gtk_dep],
            install : true)
 
+
 gnome = import('gnome')
 
 menu_resources = gnome.compile_resources(
@@ -174,6 +175,16 @@ executable('menubar',
              'menubar.vala',
              menu_resources
            ],
+           dependencies : [gtk_dep],
+           install : true)
+
+executable('popover',
+           'popover.vala',
+           dependencies : [gtk_dep],
+           install : true)
+
+executable('treeview',
+           'treeview.vala',
            dependencies : [gtk_dep],
            install : true)
 
